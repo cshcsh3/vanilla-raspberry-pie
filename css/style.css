@@ -1,0 +1,92 @@
+body {
+  background-color: #fffbfb;
+}
+
+h1, h2 {
+    font-family: "Baskervville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p, a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: 	#572e2e;
+  text-decoration: underline;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+}
+
+.link:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translateX(-1px);
+  }
+
+  20%, 80% {
+    transform: translateX(2px);
+  }
+
+  30%, 70% {
+    transform: translateX(-2px);
+  }
+
+  40%, 60% {
+    transform: translateX(1px);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+}
+
+section {
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/* Add vertical divider between columns */
+main > section:nth-child(odd) {
+  border-right: 1px solid #9f8a8a;
+  padding-right: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.menu-item {
+  padding: 0 2rem;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fffbfb;
+}
