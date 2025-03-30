@@ -90,3 +90,53 @@ footer {
   width: 100%;
   background-color: #fffbfb;
 }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 1rem;
+  }
+
+  main > section:nth-child(odd) {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  main > section {
+    border-bottom: 1px solid #9f8a8a;
+    padding-bottom: 1rem;
+  }
+
+  .menu-item {
+    padding: 0 1rem;
+  }
+
+  img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  footer {
+    position: relative;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .menu-item {
+    padding: 0 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
